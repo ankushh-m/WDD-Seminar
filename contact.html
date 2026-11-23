@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | WDD Team</title>
+  <meta name="description" content="Contact the WDD Team.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f52ba'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='800' text-anchor='middle' fill='white'%3EWT%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Apply the saved theme before the page paints -->
+  <script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||"light")}catch(e){}</script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a href="index.html" class="logo">WDD Team</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">Menu</button>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch light or dark theme">Dark</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-head">
+      <h1>Contact</h1>
+      <p>Send a message, or find us on the links beside the form.</p>
+    </div>
+
+    <section class="section" aria-labelledby="formTitle">
+      <div class="contact-grid">
+        <div>
+          <h2 id="formTitle">Send a message</h2>
+          <form class="form" id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+            <small class="error" id="nameError"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            <small class="error" id="emailError"></small>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What would you like to build?"></textarea>
+            <small class="error" id="messageError"></small>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-success" id="formSuccess" role="status"></p>
+          </form>
+        </div>
+
+        <div>
+          <h2>Find us online</h2>
+          <h3 class="link-heading">Websites</h3>
+          <ul class="link-list">
+            <li><a href="https://anugrah.anogre.com/" target="_blank" rel="noopener noreferrer"><span><strong>Anugrah's portfolio</strong><small>anugrah.anogre.com</small></span><span aria-hidden="true">Open</span></a></li>
+            <li><a href="https://logiclab.anogre.com/" target="_blank" rel="noopener noreferrer"><span><strong>LogicLab</strong><small>logiclab.anogre.com</small></span><span aria-hidden="true">Open</span></a></li>
+          </ul>
+          <h3 class="link-heading">GitHub</h3>
+          <ul class="link-list">
+            <li><a href="https://github.com/Anugrah-Jacob" target="_blank" rel="noopener noreferrer"><span><strong>Anugrah Jacob</strong><small>github.com/Anugrah-Jacob</small></span><span aria-hidden="true">Open</span></a></li><li><a href="https://github.com/elysianLens" target="_blank" rel="noopener noreferrer"><span><strong>Alen Abraham</strong><small>github.com/elysianLens</small></span><span aria-hidden="true">Open</span></a></li><li><a href="https://github.com/ankushh-m" target="_blank" rel="noopener noreferrer"><span><strong>Ankush Mitra</strong><small>github.com/ankushh-m</small></span><span aria-hidden="true">Open</span></a></li><li><a href="https://github.com/kpbabu669" target="_blank" rel="noopener noreferrer"><span><strong>Babu KP</strong><small>github.com/kpbabu669</small></span><span aria-hidden="true">Open</span></a></li>
+          </ul>
+          <h3 class="link-heading">Location</h3>
+          <p>Bengaluru, Karnataka, India</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faqTitle">
+      <div class="faq">
+        <h2 id="faqTitle">Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How long does a project take?</summary>
+            <p>A one-page site takes about 2 days. Standard projects usually take 4–7 days depending on how much is custom.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I see anything before I pay?</summary>
+            <p>Yes. A free demo is built first so you can judge the design before committing.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is hosting included?</summary>
+            <p>Starter and Business plans include one month of free hosting on Cloudflare. After that, hosting is part of the ₹599/month maintenance plan.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I upgrade later?</summary>
+            <p>Yes. You can move from a smaller plan to a larger one whenever your business grows.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">WDD Team</a>
+        <p>A team of six students in Bengaluru, India, building fast and friendly websites, games and tools together.</p>
+      </div>
+      <nav aria-label="Pages">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://privalens.ai.studio/" target="_blank" rel="noopener noreferrer">PrivaLens</a></li>
+          <li><a href="https://site-sentinel-api.anugrahjacob.workers.dev/" target="_blank" rel="noopener noreferrer">Cyber Lumina</a></li>
+          <li><a href="https://space-survivor-4c65b.web.app/" target="_blank" rel="noopener noreferrer">Space Survivor</a></li>
+          <li><a href="https://logiclab.anogre.com/" target="_blank" rel="noopener noreferrer">LogicLab</a></li>
+          <li><a href="https://github.com/ankushh-m/Doodle" target="_blank" rel="noopener noreferrer">Doodle</a></li>
+          <li><a href="https://ankushh-m.github.io/WDD-Seminar/#home" target="_blank" rel="noopener noreferrer">aarav.dev</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Team on GitHub">
+        <h2>Team on GitHub</h2>
+        <ul>
+          <li><a href="https://github.com/Anugrah-Jacob" target="_blank" rel="noopener noreferrer">Anugrah Jacob</a></li>
+          <li><a href="https://github.com/elysianLens" target="_blank" rel="noopener noreferrer">Alen Abraham</a></li>
+          <li><a href="https://github.com/ankushh-m" target="_blank" rel="noopener noreferrer">Ankush Mitra</a></li>
+          <li><a href="https://github.com/kpbabu669" target="_blank" rel="noopener noreferrer">Babu KP</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Elsewhere">
+        <h2>Elsewhere</h2>
+        <ul>
+          <li><a href="https://anugrah.anogre.com/" target="_blank" rel="noopener noreferrer">Anugrah's portfolio</a></li>
+          <li><a href="https://logiclab.anogre.com/" target="_blank" rel="noopener noreferrer">LogicLab</a></li>
+          <li><a href="https://github.com/Anugrah-Jacob" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://ankushh-m.github.io/WDD-Seminar/" target="_blank" rel="noopener noreferrer">Original seminar site</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 WDD Team. Made by all six of us for the Web Design and Development assessment.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
